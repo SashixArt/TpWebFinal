@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teseo y el Minotauro</title>
+  <link rel="stylesheet" href="misestilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+      padding: 10px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1);
+    }
+  </style>
+
+  <style>
+    body {
+      background-image: url("img/fondo.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding-top: 70px;
+      margin: 0;
+    }
+  </style>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Marcellus", sans-serif;
+      font-weight: normal;
+      text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+      font-family: 'Marcellus', serif;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #97b1e8;">
+    <div class="container-fluid">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre la temática</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#ia">Proceso IA en imágenes</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#programacion">Proceso de programación</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#resultado">Resultado final</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <div class="container d-flex justify-content-center mt-5">
+    <div class="col-12 col-md-8 col-lg-6 bg-white p-4 rounded">
+
+      <h1 class="mb-4" style="color: #97b1e8;">Aventura Gráfica Interactiva Web Teseo y El Minotauro</h1>
+
+      <img src="img/foto.png" class="img-fluid mt-3 mb-4" alt="Imagen temática">
+
+
+
+      <h3 class="mb-4" style="color: #97b1e8;">Integrantes</h3>
+
+      <div class="accordion accordion-flush" id="accordionIntegrantes">
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#integrante1" aria-expanded="false" aria-controls="integrante1">
+              Primer Integrante
+            </button>
+          </h2>
+
+          <div id="integrante1" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionIntegrantes">
+
+            <div class="accordion-body">
+
+              <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <img src="img/michi.png" class="card-img-top" alt="Alumno Sasha Ayala">
+
+                    <div class="card-body">
+                      <h5 class="card-title">Ayala Sasha Micaela</h5>
+                      <p class="card-text">
+                        Rol integrante en la Aventura Gráfica: Hacer que los botones funcionen
+                        entre sí, que funcionen y colisionen, pantalla de créditos, parte del
+                        código, etc.
+                        En la página: creación del navbar y el accordion.
+                      </p>
+
+                      <button type="button" class="btn btn-black" data-bs-toggle="modal" data-bs-target="#modalSasha">
+                        Ver más
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="modal fade" id="modalSasha" tabindex="-1" aria-labelledby="modalSashaLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5 class="modal-title mx-auto" id="modalSashaLabel">Ayala Sasha Micaela</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body">
+
+                <div class="text-center mb-3">
+                  <img src="img/michi.png" class="img-fluid" alt="Alumno Sasha Ayala">
+                </div>
+
+                <p>
+                  Rol integrante en la Aventura Gráfica: Hacer que los botones funcionen entre sí, que
+                  funcionen y colisionen, pantalla de créditos, parte del código, etc. <br>
+                  En la página: creación del navbar y el accordion.
+                </p>
+
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#integrante2" aria-expanded="false" aria-controls="integrante2">
+              Segundo Integrante
+            </button>
+          </h2>
+
+          <div id="integrante2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionIntegrantes">
+
+            <div class="accordion-body">
+
+              <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <img src="img/micu.png" class="card-img-top" alt="Alumna Gil Micaela">
+
+                    <div class="card-body">
+                      <h5 class="card-title">Gil Micaela</h5>
+                      <p class="card-text">
+                        Rol integrante en la Aventura Gráfica: Realizar las imágenes con IA,
+                        agregar sonido de fondo y crear el array de imágenes.
+                        En la página: cards, imágenes, descripciones, pie de página,carrusel, modales y agregar la
+                        aventura gráfica.
+                      </p>
+
+                      <button type="button" class="btn btn-black" data-bs-toggle="modal" data-bs-target="#modalMica">
+                        Ver más
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="modal fade" id="modalMica" tabindex="-1" aria-labelledby="modalMicaLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalMicaLabel">Gil Micaela</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body">
+                <img src="img/micu.png" class="img-fluid mb-3" alt="Alumna Gil Micaela">
+                Rol integrante en la Aventura Gráfica: Realizar las imágenes con IA, agregar sonido y
+                crear array de imágenes.
+                En la página: creación de cards, imágenes, pie de página, modales y agregar la aventura gráfica.
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="sobre" class="d-flex flex-column align-items-center mt-4">
+
+        <div class="card mb-4" style="width: 18rem;">
+          <img src="img/teseoymino.png" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="py-md-4 py-sm-1">Sobre la temática</h6>
+            <p class="card-text">
+              La temática elegida para nuestra aventura gráfica fue “Teseo y el Minotauro”.
+              Utilizamos inteligencia artificial como herramienta para el desarrollo visual
+              y narrativo del proyecto.
+            </p>
+          </div>
+        </div>
+
+
+        <h6 id="ia" class="py-md-4 py-sm-1">Proceso IA en imágenes</h6>
+        <p>¿Para que se utilizó la IA?
+          En nuestro trabajo la IA se utilizó en la creación de las imágenes con "Google Gemini",
+          en ayudar con ideas para los diferentes finales de la historia, etc.
+          Ejemplos de múltiples imágenes:
+        </p>
+
+        <div class="card mb-4" style="width: 18rem;">
+          <img src="img/laberinto.png" class="card-img-top" alt="Teseo en el laberinto">
+          <div class="card-body">
+            <p class="card-text">Teseo en el laberinto, en busca del Minotauro.</p>
+          </div>
+        </div>
+
+        <div class="card mb-4" style="width: 18rem;">
+          <img src="img/Lucha.png" class="card-img-top" alt="Teseo luchando contra el Minotauro">
+          <div class="card-body">
+            <p class="card-text">Teseo se encuentra con el Minotauro y comienza la batalla.</p>
+          </div>
+        </div>
+
+        <div class="card mb-4" style="width: 18rem;">
+          <img src="img/Teseo.png" class="card-img-top" alt="Teseo victorioso saliendo del laberinto">
+          <div class="card-body">
+            <p class="card-text">Teseo sale del laberinto victorioso, después de vencer al Minotauro.</p>
+          </div>
+        </div>
+
+        <h6 id="programacion" class="py-md-4 py-sm-1">Proceso de Programación</h6>
+        <p>
+          Comenzamos creando las imágenes con Inteligencia Artificial "Google Gemini",
+          después creamos un for con un array, en el cual agregamos estas imágenes. A su vez,
+          importamos una librería para luego poder agregar el sonido de fondo. También, para lograr
+          que las imágenes puedan pasar dependiendo la opción elegida, ya sea "SI" o "NO", utilizamos un "if" y "else".
+          Además, a partir de colisiones, logramos que estos botones de "SI" y "NO" puedan funcionar,
+          permitiendo al usuario elegir su propia aventura.
+          Por último, agregamos un botón al finalizar cada "camino" para que el usuario pueda volver a comenzar la
+          aventura.
+        </p>
+
+        <div id="carouselExampleCaptions" class="carousel slide mt-4">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+          </div>
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="img/partetp1.png" class="d-block w-100 img-fluid" alt="Diapositiva 1">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Variables Globales, Funciones, Preload, etc</h5>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="img/partetp1-2.png" class="d-block w-100 img-fluid" alt="Diapositiva 2">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Función Draw</h5>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="img/partetp1-3.png" class="d-block w-100 img-fluid" alt="Diapositiva 3">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>If Debug</h5>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="img/partetp1-4.png" class="d-block w-100 img-fluid" alt="Diapositiva 4">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>MousePressed</h5>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="img/partetp1-5.png" class="d-block w-100 img-fluid" alt="Diapositiva 5">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>If Dist, Funciones propias (MostrarBoton y Colision)</h5>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <h6 id="resultado" class="py-md-4 py-sm-1">Resultado Final</h6>
+
+      </div>
+
+      <div class="row">
+        <iframe src="p5/index.html" frameborder="0" width="690" height="580"></iframe>
+
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Ver más
+        </button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body">
+                <iframe src="p5/index.html" frameborder="0" width="700%" height="100%"></iframe>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p>Página web interactiva referida a la Aventura Gráfica "Teseo y el Minotauro", realizada por las alumnas
+          de la cátedra PMIW: Ayala Sasha y Gil Micaela</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
